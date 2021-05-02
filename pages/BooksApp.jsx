@@ -41,7 +41,7 @@ export class BooksApp extends React.Component {
         if (!books) return <div>Loading...</div>
         return (
             <section className="main-container">
-                <h2>MissBooks</h2>
+                <h1>MissBooks</h1>
                 {!selectedBook && <React.Fragment>
                     <BookFilter onSetFilter={this.onSetFilter} />
                     <BookList books={books} setSelectedBook={this.setSelectedBook} />

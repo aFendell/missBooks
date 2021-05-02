@@ -6,16 +6,13 @@ html {
 }
 
 body {
-    /* background-color: whitesmoke; */
-    background-image: linear-gradient(to bottom right, rgb(217, 35, 241), gold);
-    /* background-image: linear-gradient(to bottom right, rgb(35, 107, 241), gold); */
-    /* background-image: linear-gradient(to bottom right, rgb(252, 89, 89), gold); */
-    /* margin: 0 auto; */
+    background-image: linear-gradient(to right, rgb(78, 131, 124), rgb(199, 199, 199));
 }
 
-h2 {
+h1 {
     text-align: center;
-    color: gold;
+    color: rgb(139, 123, 27);
+    font-size: 2rem;
 }
 
 /* Components */
@@ -37,10 +34,11 @@ h2 {
 
 .book-preview {
     width: 40%;
-    box-shadow: 0 0 7px 5px whitesmoke;
-    /* box-shadow: 0 0 7px 5px #7e7d7d78; */
+    box-shadow: 0 0 7px 5px rgb(184, 172, 121);
     margin: 1rem;
     border-radius: 5px;
+    background-color: rgb(245, 239, 215);
+
 }
 
 .book-preview img {
@@ -75,7 +73,6 @@ h2 {
 .book-filter > * {
     margin-bottom: 0.5rem;
     box-shadow: 0 0 2px 1px whitesmoke;
-
 }
 
 .book-filter input {
