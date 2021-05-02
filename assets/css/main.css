@@ -1,0 +1,129 @@
+/* Base */
+
+html {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    /* background-color: whitesmoke; */
+    background-image: linear-gradient(to bottom right, rgb(217, 35, 241), gold);
+    /* background-image: linear-gradient(to bottom right, rgb(35, 107, 241), gold); */
+    /* background-image: linear-gradient(to bottom right, rgb(252, 89, 89), gold); */
+    /* margin: 0 auto; */
+}
+
+h2 {
+    text-align: center;
+    color: gold;
+}
+
+/* Components */
+
+/* book-list */
+
+.book-list {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book-list>*:not(:first-child) {
+    margin-left: 1rem;
+}
+
+/* book-preview */
+
+.book-preview {
+    width: 40%;
+    box-shadow: 0 0 7px 5px whitesmoke;
+    /* box-shadow: 0 0 7px 5px #7e7d7d78; */
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.book-preview img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.preview-details {
+    margin: 0rem 0.75rem 0rem 0.75rem;
+}
+
+.preview-details h4 {
+    margin: 0;
+}
+
+.preview-details p {
+    position: relative;
+    bottom: 5px;
+}
+
+/* book-filter */
+
+.book-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.book-filter > * {
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0 2px 1px whitesmoke;
+
+}
+
+.book-filter input {
+    margin-left: 5px;
+    width: 70%;
+    border: 2px solid #7e7d7d78;
+    border-radius: 5px;
+    height: 1.5rem;
+    text-align: center;
+}
+
+.book-filter button {
+    margin-top: 1.2rem;
+    margin-left: 5px;
+    width: 30%;
+    min-height: 50px;
+    border: 2px solid #7e7d7d78;
+    border-radius: 5px;
+}
+
+/* bookDetails */
+.book-details img {
+    width: 100%;
+}
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.book-details button {
+    width: 30%;
+    min-height: 50px;
+    border: 2px solid #7e7d7d78;
+    border-radius: 5px;
+}
+
+@media (min-width: 850px) {
+    .book-preview {
+        width: 15%;
+    }
+    .book-filter {
+        flex-direction: row;
+    }
+}
+
+.book-details img {
+    width: 50%;
+}
